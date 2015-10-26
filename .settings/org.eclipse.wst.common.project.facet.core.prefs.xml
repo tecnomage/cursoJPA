@@ -1,0 +1,15 @@
+<root>
+<<<<<<< HEAD
+	<facet id="jpt.jpa">
+		<node name="libprov">
+			<attribute name="provider-id" value="jpa-no-op-library-provider" />
+		</node>
+	</facet>
+=======
+  <facet id="jpt.jpa">
+    <node name="libprov">
+      <attribute name="provider-id" value="jpa-no-op-library-provider"/>
+    </node>
+  </facet>
+>>>>>>> ba1d6bd9a1916c87bd09c9caefd8c2be3e875bf2
+</root>

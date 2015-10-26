@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faceted-project>
+<<<<<<< HEAD
+	<runtime name="Apache Tomcat V7.0" />
+	<fixed facet="jpt.jpa" />
+	<fixed facet="java" />
+	<installed facet="java" version="1.8" />
+	<installed facet="jpt.jpa" version="2.1" />
+=======
+  <runtime name="Apache Tomcat V7.0"/>
+  <fixed facet="jpt.jpa"/>
+  <fixed facet="java"/>
+  <installed facet="java" version="1.8"/>
+  <installed facet="jpt.jpa" version="2.1"/>
+>>>>>>> ba1d6bd9a1916c87bd09c9caefd8c2be3e875bf2
+</faceted-project>

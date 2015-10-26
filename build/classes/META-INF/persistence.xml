@@ -1,0 +1,51 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="conta2" transaction-type="RESOURCE_LOCAL">
+		<!-- implementação do JPA, no nosso caso hibernate -->
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>br.com.conta.Conta</class>
+		<class>br.com.conta.Movimentacao</class>
+		<properties>
+			<!-- configuraçoes do jdbc -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/conta" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+
+			<!-- configuraçoes do hibernate -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+
+		</properties>
+	</persistence-unit>
+</persistence>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="conta2" transaction-type="RESOURCE_LOCAL">
+		<!-- implementação do JPA, no nosso caso hibernate -->
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>Conta</class>
+		<class>Movimentacao</class>
+		<properties>
+			<!-- configuraçoes do jdbc -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/conta"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value=""/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			
+			<!-- configuraçoes do hibernate -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.format_sql" value="true"/>
+		
+		</properties>
+	</persistence-unit>
+</persistence>
+>>>>>>> ba1d6bd9a1916c87bd09c9caefd8c2be3e875bf2
